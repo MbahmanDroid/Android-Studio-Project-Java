@@ -1,0 +1,22 @@
+sintaks Login.java
+
+
+
+public class Login extends AppCompatActivity {
+
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(layout.login_activity);
+
+        TextView go = (TextView) findViewById(id.txt_register);
+
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Login.this, Register.class);
+                startActivity(i);
+            }
+        });
+    }
+}
