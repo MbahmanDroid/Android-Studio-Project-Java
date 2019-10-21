@@ -1,2 +1,2 @@
-# Android-Studio-Project-Java
- 
+# Android Studio Project
+Java based
